@@ -61,7 +61,7 @@ Future<void> addCustomer() async {
   String phoneNumber = stdin.readLineSync() ?? "";
 
   var response = await http.post(
-    Uri.parse('http://localhost:8080/customers'),
+    Uri.parse('http://localhost:8080/customers/add'),
     headers: <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
     },
